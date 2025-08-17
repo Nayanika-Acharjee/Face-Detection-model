@@ -1,18 +1,27 @@
+
+
+
+
+
+
+
+
+
 import cv2
 import matplotlib.pyplot as plt
 from mtcnn import MTCNN
 
-# Read uploaded image (replace with your filename if different)
+
 image = cv2.imread("sample.jpg")
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-# Show original
+
 plt.imshow(image_rgb)
 plt.axis("off")
 plt.title("Original Image")
 plt.show()
 
-# Face detection
+
 detector = MTCNN()
 faces = detector.detect_faces(image_rgb)
 print("Faces detected:", len(faces))
@@ -30,5 +39,3 @@ plt.imshow(image_rgb)
 plt.axis("off")
 plt.title("Detected Faces")
 plt.show()
-
-
