@@ -1,15 +1,4 @@
 
-# !pip install opencv-python matplotlib mtcnn
-
-
-
-
-from google.colab import files   # <--- this line is required
-
-# Pick an image from your computer
-uploaded = files.upload()
-
-
 
 
 
@@ -48,4 +37,5 @@ plt.imshow(image_rgb)
 plt.axis("off")
 plt.title("Detected Faces")
 plt.show()
+
 
